@@ -35,8 +35,15 @@ def similarity(to_cities, like_city):
         # both are tuples
         name = to_city[1]
         to_city = to_city[2:]
-        score = np.sqrt(np.linalg.norm(like_city)**2 * np.linalg.norm(to_city)**2)
-        res.append([name, 1 / (1 + np.exp(-1*score))])
+        score = 0
+        for i in range(len(to_city)):
+            try:
+                score += (like_city[i] - to_city[i]) / to_city[i]
+            except:
+                continue
+        score /= len(to_city)
+        res.append([name, round(1 / (1 + np.exp(-1 * score)), 2)])
+    print(res)
     return res
 
 @app.route("/detail")
@@ -71,9 +78,11 @@ def send_preferences():
 
 
             # list of zipcodes using that one API
-            url = f"https://www.zipcodeapi.com/rest/xk98MBBMmDWguQK450Ev5dMTIrNa5Ioc5urBoxe2eONkWyyP49LAeY2DOUf3jZhW/radius.json/{to_city_zip[0]}/{radius}/mile"
-            print(url)
-            list_of_zipcodes = requests.get(url=url).json()
+            # url = f"https://www.zipcodeapi.com/rest/xk98MBBMmDWguQK450Ev5dMTIrNa5Ioc5urBoxe2eONkWyyP49LAeY2DOUf3jZhW/radius.json/{to_city_zip[0]}/{radius}/mile"
+            # print(url)
+            # list_of_zipcodes = requests.get(url=url).json()
+            with open("mock.json", "r") as f:
+                list_of_zipcodes = json.loads(f.read())
             print(list_of_zipcodes)
 
             # handle when zipcodes are empty
