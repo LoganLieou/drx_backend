@@ -33,10 +33,11 @@ def similarity(to_cities, like_city):
     like_city = like_city[2:]
     res = []
     for to_city in to_cities:
-        # normalized cosine similarity * 100 = percent similarity
-        # 1 = name
-        # both are tuples
+        # sigmoid mean absolute difference
+        # normal mean absolute difference
+        # take the mean absolute difference then normalize
         name = to_city[1]
+        zip_code = to_city[0]
         to_city = to_city[2:]
         score = 0
         for i in range(len(to_city)):
@@ -45,14 +46,23 @@ def similarity(to_cities, like_city):
             except:
                 continue
         score /= len(to_city)
-        res.append([name, round(1 / (1 + np.exp(-1 * score)), 2)])
-    print(res)
+
+        # the reason we're returning zip code is because front end will
+        # need to query to_zipcode like_zipcode for detail veiw if we want this feature
+        # on frontend just like .name and .score need to be used unless we also want .zip_code
+        res.append([zip_code, name, round(1 / (1 + np.exp(-1 * score)), 2)])
     return res
 
 @app.route("/detail")
 def detail():
+    # these are zipcodes
+    to = request.form['to_zipcode']
+    like = request.form['like_zipcode']
+
     # return the cache front end can use it
-    return jsonify(cache)
+    conn = sqlite3.connect("test.db")
+    return jsonify((conn.execute(f"SELECT * FROM cities WHERE zip = {to}").fetchone(),
+                    conn.execute(f"SELECT * FROM cities WHERE zip = {like}").fetchone()))
 
 @app.route("/send_city", methods=["POST", "GET"])
 def send_preferences():
