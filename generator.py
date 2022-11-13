@@ -3,16 +3,17 @@ from random import sample
 from sqlite3 import connect
 from zipcodes import matching, is_real
 
+
 def generate_tuples(amount: int) -> list:
     """
-    Generate tables from Logupogu's idea
+    Generate tables from Logupogu's idea; FYI, only TX zipcodes will be generated
 
     :param amount: (int) The amount of tuples to generate
     :return: a list of tuples
     """
 
-    visisted_zips = set()
-
+    # Predetermined variables
+    visited_zips = set()
     tuples = []
     rank = [i for i in range(1, amount + 1)]
     art_rank = [i for i in range(1, amount + 1)]
@@ -20,17 +21,18 @@ def generate_tuples(amount: int) -> list:
 
     for _ in range(amount):
         zipcode = faker.zipcode_in_state('TX')
-    for _ in range(amount):
-        zipcode = faker.zipcode_in_state('TX')
-        while not is_real(zipcode) or zipcode in visisted_zips:
+
+        # Keep generating valid, unvisited TX zipcodes
+        while not is_real(zipcode) or zipcode in visited_zips:
             zipcode = faker.zipcode_in_state('TX')
-        visisted_zips.add(zipcode)
 
-        name = matching(zipcode)[0]["city"]
+        # Add zipcode to visited set
+        visited_zips.add(zipcode)
 
+        # Crime rate: number of crimes per 100K residents
         data_tuple = (
             zipcode,
-            name,
+            matching(zipcode)[0]["city"],
             faker.pyfloat(min_value=30, max_value=200),
             faker.pyint(min_value=0, max_value=100),
             sample(rank, 1)[0],
@@ -43,22 +45,6 @@ def generate_tuples(amount: int) -> list:
             faker.pyint(min_value=24, max_value=60)
         )
 
-        # Crime rate: number of crimes per 100K residents
-        # data_tuple = {
-        #     "zip": zipcode,
-        #     "name": name,
-        #     "cost_of_living": faker.pyfloat(min_value=30, max_value=200),
-        #     "walkability": faker.pyint(min_value=0, max_value=100),
-        #     "public_school_ranking": sample(rank, 1)[0],
-        #     "arts_and_culture_ranking": sample(art_rank, 1)[0],
-        #     "temperature": faker.pyint(min_value=30, max_value=110),
-        #     "noise": faker.pyint(min_value=20, max_value=55),
-        #     "crime_rate": faker.pyint(min_value=1000, max_value=7000),
-        #     "precipitation": faker.pyfloat(min_value=5, max_value=200),
-        #     "air_quality": faker.pyint(min_value=3, max_value=495),
-        #     "housing_price": faker.pyfloat(right_digits=2, min_value=100000, max_value=1200000),
-        #     "age": faker.pyint(min_value=24, max_value=60)
-        # }
         print(data_tuple)
         tuples.append(data_tuple)
 
@@ -76,6 +62,7 @@ def insert_into_db(amount: int):
 
     con = connect("test.db")
     cur = con.cursor()
+
     try:
         cur.executemany("""INSERT INTO cities VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""", tuples)
         con.commit()
