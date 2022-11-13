@@ -5,13 +5,12 @@ create table cities (
 	walkability real,
 	public_school_ranking integer,
 	arts_and_culture_ranking integer,
-	temprature real,
+	temperature real,
 	crime_rate real,
-	percipitation real,
+	precipitation real,
 	air_quality real,
 	housing_price real,
-	age integer,
-	seat text
+	age integer
 );
 
 insert into cities values(
@@ -26,8 +25,7 @@ insert into cities values(
 	22.2,
 	18.6,
 	334600.99,
-	32,
-	"Austin"
+	32
 );
 
 insert into cities values(
@@ -42,8 +40,7 @@ insert into cities values(
 	22.2,
 	18.6,
 	334600.99,
-	32,
-	"Austin"
+	32
 );
 
 insert into cities values(
@@ -58,6 +55,5 @@ insert into cities values(
 	22.2,
 	18.6,
 	334600.99,
-	32,
-	"Chicago"
+	32
 );
