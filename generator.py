@@ -3,7 +3,6 @@ from random import sample
 from sqlite3 import connect
 from zipcodes import matching, is_real
 
-
 def generate_tuples(amount: int) -> list:
     """
     Generate tables from Logupogu's idea
@@ -17,7 +16,7 @@ def generate_tuples(amount: int) -> list:
     art_rank = [i for i in range(1, amount + 1)]
     faker = Faker()
 
-    for i in range(amount):
+    for _ in range(amount):
         zipcode = faker.zipcode()
         while not is_real(zipcode):
             zipcode = faker.zipcode()
@@ -71,9 +70,12 @@ def insert_into_db(amount: int):
     tuples = generate_tuples(amount)
     con = connect("test.db")
     cur = con.cursor()
-    cur.executemany("""INSERT INTO cities VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""", tuples)
-    con.commit()
+    try:
+        cur.executemany("""INSERT INTO cities VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""", tuples)
+        con.commit()
+    except:
+        pass
 
 
 if __name__ == "__main__":
-    result = insert_into_db(5)
+    result = insert_into_db(1000)

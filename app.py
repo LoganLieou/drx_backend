@@ -3,6 +3,7 @@ import sqlite3
 import numpy as np
 import requests
 import os
+import json
 
 app = Flask(__name__)
 
@@ -26,16 +27,17 @@ def similarity(to_cities, like_city):
     - housing price
     - age
     """
-    like_city = [type(x) == int or type(x) == float for x in like_city]
+    like_city = like_city[2:]
     res = []
     for to_city in to_cities:
         # normalized cosine similarity * 100 = percent similarity
         # 1 = name
         # both are tuples
         name = to_city[1]
-        to_city = [type(x) == int or type(x) == float for x in to_city]
-        res.append([name, 1 / (1 + np.exp(-1*np.dot(like_city, to_city)))])
-    return res * 100
+        to_city = to_city[2:]
+        cosine_similarity = np.dot(like_city, to_city) / (np.linalg.norm(like_city) * np.linalg.norm(to_city))
+        res.append([name, 1 / (1 + np.exp(-1*cosine_similarity))])
+    return res
 
 @app.route("/detail")
 def detail():
@@ -59,14 +61,13 @@ def send_preferences():
             # getting the city we want it to be like from the database
             # to compare to
             like_city = conn.execute(f"""
-                SELECT * FORM cities WHERE name = {like}
+                SELECT * FROM cities WHERE name = {like}
             """).fetchone()
 
             # get the zip code of the city we're moving to
             to_city_zip = conn.execute(f"""
-                SELECT zip FROM cities 
-                WHERE name = {to}
-            """).fetchall()
+                SELECT zip FROM cities WHERE name = {to}
+            """).fetchone()
 
             # list of zipcodes using that one API
             url = f"""
@@ -74,13 +75,20 @@ def send_preferences():
             """
             list_of_zipcodes = requests.get(url=url).json()
 
+            # handle when zipcodes are empty
+            # i.e. when we match no zipcodes
+            if list_of_zipcodes == {}: 
+                return "LOL no zipcodes match your location and/or radius preferences"
+
             # very scuffed way lots of sql queries going on here
             # this is O(n) queries instead of O(1) 😔
             to_cities = []
-            for zipcode in list_of_zipcodes:
+            for zipcode in list_of_zipcodes['zip_codes']:
                 to_cities.append(conn.execute(f"""
-                    SELECT * FROM citites WHERE zip = {zipcode.zipcode}
+                    SELECT * FROM cities WHERE zip = {zipcode['zip_code']}
                 """).fetchone())
+            to_cities = [x for x in to_cities if x]
+            print(to_cities)
 
             # need the tuple index for the name of the city
             # cache this

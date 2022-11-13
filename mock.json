@@ -1,0 +1,1084 @@
+{
+    "zip_codes": [
+        {
+            "zip_code": "75215",
+            "distance": 24.97,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75185",
+            "distance": 22.817,
+            "city": "Mesquite",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75187",
+            "distance": 22.817,
+            "city": "Mesquite",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75227",
+            "distance": 22.772,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75210",
+            "distance": 23.452,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75149",
+            "distance": 21.876,
+            "city": "Mesquite",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75202",
+            "distance": 24.283,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75037",
+            "distance": 24.114,
+            "city": "Irving",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75286",
+            "distance": 24.114,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75310",
+            "distance": 24.114,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75353",
+            "distance": 24.114,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75364",
+            "distance": 24.114,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75387",
+            "distance": 24.114,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75388",
+            "distance": 24.114,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75396",
+            "distance": 24.114,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75344",
+            "distance": 23.845,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75270",
+            "distance": 24.102,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75226",
+            "distance": 23.342,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75207",
+            "distance": 24.263,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75201",
+            "distance": 23.625,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75221",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75222",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75242",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75250",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75260",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75262",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75263",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75264",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75265",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75266",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75267",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75275",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75277",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75283",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75284",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75285",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75301",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75303",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75312",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75313",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75315",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75320",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75326",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75336",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75339",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75342",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75354",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75355",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75356",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75357",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75359",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75360",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75367",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75368",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75370",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75371",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75372",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75373",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75374",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75376",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75378",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75379",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75380",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75381",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75382",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75389",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75391",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75392",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75393",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75394",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75395",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75397",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75398",
+            "distance": 22.5,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75223",
+            "distance": 22.006,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75246",
+            "distance": 22.637,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75182",
+            "distance": 20.305,
+            "city": "Sunnyvale",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75204",
+            "distance": 22.451,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75219",
+            "distance": 22.56,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75247",
+            "distance": 24.863,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75390",
+            "distance": 23.321,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75150",
+            "distance": 18.866,
+            "city": "Mesquite",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75245",
+            "distance": 22.629,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75228",
+            "distance": 18.756,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75214",
+            "distance": 19.741,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75206",
+            "distance": 20.203,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75235",
+            "distance": 22.596,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75205",
+            "distance": 20.621,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75218",
+            "distance": 17.971,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75209",
+            "distance": 20.885,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75032",
+            "distance": 19.094,
+            "city": "Rockwall",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75043",
+            "distance": 16.168,
+            "city": "Garland",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75225",
+            "distance": 18.775,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75220",
+            "distance": 21.78,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75231",
+            "distance": 16.972,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75238",
+            "distance": 15.693,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75041",
+            "distance": 14.698,
+            "city": "Garland",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75039",
+            "distance": 23.957,
+            "city": "Irving",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75229",
+            "distance": 20.095,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75088",
+            "distance": 13.691,
+            "city": "Rowlett",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75030",
+            "distance": 13.549,
+            "city": "Rowlett",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75230",
+            "distance": 16.78,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75045",
+            "distance": 12.444,
+            "city": "Garland",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75046",
+            "distance": 12.444,
+            "city": "Garland",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75047",
+            "distance": 12.444,
+            "city": "Garland",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75049",
+            "distance": 12.444,
+            "city": "Garland",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75042",
+            "distance": 12.886,
+            "city": "Garland",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75243",
+            "distance": 14.309,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75251",
+            "distance": 15.044,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75063",
+            "distance": 24.813,
+            "city": "Irving",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75234",
+            "distance": 20.04,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75244",
+            "distance": 17.403,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75040",
+            "distance": 11.138,
+            "city": "Garland",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75363",
+            "distance": 15.233,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75240",
+            "distance": 15.124,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75089",
+            "distance": 11.098,
+            "city": "Rowlett",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75358",
+            "distance": 18.341,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75189",
+            "distance": 19.999,
+            "city": "Royse City",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75087",
+            "distance": 13.535,
+            "city": "Rockwall",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75254",
+            "distance": 14.978,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75132",
+            "distance": 16.862,
+            "city": "Fate",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75081",
+            "distance": 11.356,
+            "city": "Richardson",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75099",
+            "distance": 23.826,
+            "city": "Coppell",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75001",
+            "distance": 16.051,
+            "city": "Addison",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75323",
+            "distance": 14.261,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75006",
+            "distance": 18.972,
+            "city": "Carrollton",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75019",
+            "distance": 23.461,
+            "city": "Coppell",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75044",
+            "distance": 8.978,
+            "city": "Garland",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75048",
+            "distance": 8.51,
+            "city": "Sachse",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75248",
+            "distance": 13.717,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75083",
+            "distance": 9.82,
+            "city": "Richardson",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75085",
+            "distance": 9.82,
+            "city": "Richardson",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75080",
+            "distance": 11.028,
+            "city": "Richardson",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75011",
+            "distance": 17.976,
+            "city": "Carrollton",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75082",
+            "distance": 7.489,
+            "city": "Richardson",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75252",
+            "distance": 12.195,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75287",
+            "distance": 14.884,
+            "city": "Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75007",
+            "distance": 17.684,
+            "city": "Carrollton",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75098",
+            "distance": 6.869,
+            "city": "Wylie",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75166",
+            "distance": 10.414,
+            "city": "Lavon",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75067",
+            "distance": 23.269,
+            "city": "Lewisville",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75075",
+            "distance": 9.039,
+            "city": "Plano",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75094",
+            "distance": 4.72,
+            "city": "Plano",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75074",
+            "distance": 5.504,
+            "city": "Plano",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75093",
+            "distance": 12.358,
+            "city": "Plano",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75029",
+            "distance": 21.773,
+            "city": "Lewisville",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75026",
+            "distance": 8.342,
+            "city": "Plano",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75086",
+            "distance": 8.342,
+            "city": "Plano",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75010",
+            "distance": 15.636,
+            "city": "Carrollton",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75057",
+            "distance": 21.371,
+            "city": "Lewisville",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75023",
+            "distance": 7.427,
+            "city": "Plano",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75173",
+            "distance": 12.492,
+            "city": "Nevada",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75164",
+            "distance": 17.46,
+            "city": "Josephine",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75135",
+            "distance": 22.482,
+            "city": "Caddo Mills",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75056",
+            "distance": 17.931,
+            "city": "The Colony",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75024",
+            "distance": 11.289,
+            "city": "Plano",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75121",
+            "distance": 10.934,
+            "city": "Copeville",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75002",
+            "distance": 0,
+            "city": "Allen",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75025",
+            "distance": 7.595,
+            "city": "Plano",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75065",
+            "distance": 22.993,
+            "city": "Lake Dallas",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75013",
+            "distance": 5.223,
+            "city": "Allen",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75036",
+            "distance": 18.115,
+            "city": "Frisco",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75033",
+            "distance": 12.143,
+            "city": "Frisco",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75034",
+            "distance": 14.819,
+            "city": "Frisco",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75407",
+            "distance": 9.08,
+            "city": "Princeton",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75035",
+            "distance": 11.666,
+            "city": "Frisco",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75070",
+            "distance": 7.607,
+            "city": "Mckinney",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75442",
+            "distance": 15.738,
+            "city": "Farmersville",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75068",
+            "distance": 20.656,
+            "city": "Little Elm",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75069",
+            "distance": 6.367,
+            "city": "Mckinney",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75072",
+            "distance": 8.591,
+            "city": "McKinney",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75458",
+            "distance": 20.757,
+            "city": "Merit",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75078",
+            "distance": 15.765,
+            "city": "Prosper",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75071",
+            "distance": 10.849,
+            "city": "Mckinney",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75454",
+            "distance": 13.766,
+            "city": "Melissa",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75097",
+            "distance": 16.006,
+            "city": "Weston",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75424",
+            "distance": 20.832,
+            "city": "Blue Ridge",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75009",
+            "distance": 19.126,
+            "city": "Celina",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75485",
+            "distance": 20.179,
+            "city": "Westminster",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75409",
+            "distance": 19.111,
+            "city": "Anna",
+            "state": "TX"
+        },
+        {
+            "zip_code": "75495",
+            "distance": 24.4,
+            "city": "Van Alstyne",
+            "state": "TX"
+        }
+    ]
+}
