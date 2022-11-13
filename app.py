@@ -53,16 +53,22 @@ def similarity(to_cities, like_city):
         res.append([zip_code, name, round(1 / (1 + np.exp(-1 * score)), 2)])
     return res
 
-@app.route("/detail")
+@app.route("/detail", methods=["POST", "GET"])
 def detail():
-    # these are zipcodes
-    to = request.form['to_zipcode']
-    like = request.form['like_zipcode']
+    if request.method == "POST":
+        try:
+            # these are zipcodes
+            to = request.form['to_zipcode']
+            like = request.form['like_zipcode']
 
-    # return the cache front end can use it
-    conn = sqlite3.connect("test.db")
-    return jsonify((conn.execute(f"SELECT * FROM cities WHERE zip = {to}").fetchone(),
-                    conn.execute(f"SELECT * FROM cities WHERE zip = {like}").fetchone()))
+            # return the cache front end can use it
+            conn = sqlite3.connect("test.db")
+            return jsonify((conn.execute(f"SELECT * FROM cities WHERE zip = {to}").fetchone(),
+                            conn.execute(f"SELECT * FROM cities WHERE zip = {like}").fetchone()))
+        except Exception as e:
+            return "ERROR: " + str(e)
+    else:
+        return "try POST instead"
 
 @app.route("/send_city", methods=["POST", "GET"])
 def send_preferences():
