@@ -35,8 +35,8 @@ def similarity(to_cities, like_city):
         # both are tuples
         name = to_city[1]
         to_city = to_city[2:]
-        cosine_similarity = np.dot(like_city, to_city) / (np.linalg.norm(like_city) * np.linalg.norm(to_city))
-        res.append([name, 1 / (1 + np.exp(-1*cosine_similarity))])
+        score = np.sqrt(np.linalg.norm(like_city)**2 * np.linalg.norm(to_city)**2)
+        res.append([name, 1 / (1 + np.exp(-1*score))])
     return res
 
 @app.route("/detail")
@@ -69,15 +69,16 @@ def send_preferences():
                 SELECT zip FROM cities WHERE name = {to}
             """).fetchone()
 
+
             # list of zipcodes using that one API
-            url = f"""
-                https://www.zipcodeapi.com/rest/{os.getenv("API_KEY")}/radius.json/{to_city_zip}/{radius}/mile
-            """
+            url = f"https://www.zipcodeapi.com/rest/xk98MBBMmDWguQK450Ev5dMTIrNa5Ioc5urBoxe2eONkWyyP49LAeY2DOUf3jZhW/radius.json/{to_city_zip[0]}/{radius}/mile"
+            print(url)
             list_of_zipcodes = requests.get(url=url).json()
+            print(list_of_zipcodes)
 
             # handle when zipcodes are empty
             # i.e. when we match no zipcodes
-            if list_of_zipcodes == {}: 
+            if not list_of_zipcodes:
                 return "LOL no zipcodes match your location and/or radius preferences"
 
             # very scuffed way lots of sql queries going on here

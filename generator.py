@@ -11,20 +11,20 @@ def generate_tuples(amount: int) -> list:
     :return: a list of tuples
     """
 
+    visisted_zips = set()
+
     tuples = []
     rank = [i for i in range(1, amount + 1)]
     art_rank = [i for i in range(1, amount + 1)]
     faker = Faker()
 
-<<<<<<< HEAD
     for _ in range(amount):
-        zipcode = faker.zipcode()
-=======
-    for i in range(amount):
         zipcode = faker.zipcode_in_state('TX')
->>>>>>> 422cb8a7d68fea6634caf5e971b8dc7ab870549d
-        while not is_real(zipcode):
-            zipcode = faker.zipcode()
+    for _ in range(amount):
+        zipcode = faker.zipcode_in_state('TX')
+        while not is_real(zipcode) or zipcode in visisted_zips:
+            zipcode = faker.zipcode_in_state('TX')
+        visisted_zips.add(zipcode)
 
         name = matching(zipcode)[0]["city"]
 
@@ -73,14 +73,15 @@ def insert_into_db(amount: int):
     """
 
     tuples = generate_tuples(amount)
+
     con = connect("test.db")
     cur = con.cursor()
     try:
         cur.executemany("""INSERT INTO cities VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""", tuples)
         con.commit()
-    except:
-        pass
+    except Exception as e:
+        print("ERROR: " + str(e))
 
 
 if __name__ == "__main__":
-    result = insert_into_db(1000)
+    result = insert_into_db(1930)
