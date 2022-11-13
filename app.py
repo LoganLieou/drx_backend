@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 import sqlite3
 import numpy as np
 import requests
@@ -6,6 +7,8 @@ import os
 import json
 
 app = Flask(__name__)
+
+CORS(app)
 
 cache = {}
 
