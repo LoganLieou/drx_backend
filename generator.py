@@ -16,8 +16,13 @@ def generate_tuples(amount: int) -> list:
     art_rank = [i for i in range(1, amount + 1)]
     faker = Faker()
 
+<<<<<<< HEAD
     for _ in range(amount):
         zipcode = faker.zipcode()
+=======
+    for i in range(amount):
+        zipcode = faker.zipcode_in_state('TX')
+>>>>>>> 422cb8a7d68fea6634caf5e971b8dc7ab870549d
         while not is_real(zipcode):
             zipcode = faker.zipcode()
 
