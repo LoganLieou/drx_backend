@@ -18,7 +18,7 @@ def generate_tuples(amount: int) -> list:
     faker = Faker()
 
     for i in range(amount):
-        zipcode = faker.zipcode()
+        zipcode = faker.zipcode_in_state('TX')
         while not is_real(zipcode):
             zipcode = faker.zipcode()
 
