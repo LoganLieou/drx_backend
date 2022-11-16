@@ -33,24 +33,19 @@ def similarity(to_cities, like_city):
     like_city = like_city[2:]
     res = []
     for to_city in to_cities:
-        # sigmoid mean absolute difference
-        # normal mean absolute difference
-        # take the mean absolute difference then normalize
+        # the cosine similarity is most accurate representation
+        # of a ranked similarity score but the scores really don't mean
+        # anything to a human need to find a way to normalize these properly
+        # error due to very large values on some features i.e. home value
         name = to_city[1]
         zip_code = to_city[0]
         to_city = to_city[2:]
-        score = 0
-        for i in range(len(to_city)):
-            try:
-                score += (like_city[i] - to_city[i]) / to_city[i]
-            except:
-                continue
-        score /= len(to_city)
+        score = np.dot(to_city, like_city) / (np.linalg.norm(to_city) * np.linalg.norm(like_city))
 
         # the reason we're returning zip code is because front end will
         # need to query to_zipcode like_zipcode for detail veiw if we want this feature
         # on frontend just like .name and .score need to be used unless we also want .zip_code
-        res.append([zip_code, name, round(1 / (1 + np.exp(-1 * score)), 2)])
+        res.append([zip_code, name, score])
     return res
 
 @app.route("/detail", methods=["POST", "GET"])
@@ -97,12 +92,17 @@ def send_preferences():
 
 
             # list of zipcodes using that one API
-            # url = f"https://www.zipcodeapi.com/rest/xk98MBBMmDWguQK450Ev5dMTIrNa5Ioc5urBoxe2eONkWyyP49LAeY2DOUf3jZhW/radius.json/{to_city_zip[0]}/{radius}/mile"
-            # print(url)
-            # list_of_zipcodes = requests.get(url=url).json()
-            with open("mock.json", "r") as f:
-                list_of_zipcodes = json.loads(f.read())
-            print(list_of_zipcodes)
+            # yes the key is public in our source code in plaintext lol
+            # I mean bruh what u gonna do w this rate limit our site lmaooo bruh it's already limited to 10
+            # calls / hr not gonna do shit my guy
+            url = f"https://www.zipcodeapi.com/rest/xk98MBBMmDWguQK450Ev5dMTIrNa5Ioc5urBoxe2eONkWyyP49LAeY2DOUf3jZhW/radius.json/{to_city_zip[0]}/{radius}/mile"
+            print(url)
+            list_of_zipcodes = requests.get(url=url).json()
+
+            # mocking bc rate limited :sadge:
+            # with open("mock.json", "r") as f:
+            #   list_of_zipcodes = json.loads(f.read())
+            # print(list_of_zipcodes)
 
             # handle when zipcodes are empty
             # i.e. when we match no zipcodes
